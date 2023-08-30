@@ -1,7 +1,7 @@
 from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import CharacterTextSplitter
 
-loader = PyPDFLoader("prayer-project.pdf")
+loader = PyPDFLoader("docs/prayer-project.pdf")
 pages = loader.load()
 
 text_splitter = CharacterTextSplitter(
